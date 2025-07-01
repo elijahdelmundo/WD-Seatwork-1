@@ -21,7 +21,7 @@
     display: flex;
     align-items: center;
     padding: .5rem 3rem;
-    background-color: rgb(255, 224, 230);
+    background-color: rgb(25, 170, 180);
     justify-content: space-between;
     max-height: 10rem;
  
@@ -36,7 +36,7 @@
  
         .company-name {
             font-size: 2rem;
-            color: rgb(78, 216, 147);
+            color: rgb(10, 13, 14);
         }
     }
  
@@ -48,9 +48,9 @@
             background: rgb(204, 126, 10);
             background: linear-gradient(
                 90deg,
-                rgb(175, 7, 35) 0%,
-                rgb(173, 11, 38) 35%,
-                rgb(233, 223, 87) 100%
+                rgb(4, 5, 5) 0%,
+                rgb(74, 145, 148) 35%,
+                rgb(19, 156, 197) 100%
             );
             font-size: 1.2rem;
             padding: .5rem 1rem;
@@ -78,7 +78,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(255, 224, 230);
+    background-color: rgb(28, 112, 168);
     font-size: .8rem;
     padding: .5rem 1rem;
     justify-self: end;
