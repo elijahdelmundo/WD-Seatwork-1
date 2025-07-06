@@ -1,198 +1,103 @@
-/* Basic Reset & Font */
-body {
+* {
     margin: 0;
-    font-family: 'Inter', sans-serif; /* Using Inter font as per instructions */
-    background-color: #f0f2f5; /* Light grey background for the page */
-    color: #333;
-    line-height: 1.6;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
 }
-
-/* Header Styling */
+ 
+/* .header *,
 .header {
-    background-color: #20B2AA; /* Teal color from the image */
-    color: white;
-    padding: 10px 20px;
+    border: 1px dotted black;
+} */
+ 
+.body {
     display: flex;
+    flex-direction: column;
+    min-height: 100svh;
+    /* border: 1px dotted black; */
+}
+ 
+.header {
+    display: flex;
+    align-items: center;
+    padding: .5rem 3rem;
+    background-color: rgb(25, 170, 180);
     justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    border-bottom-left-radius: 10px; /* Rounded corners for the bottom of the header */
-    border-bottom-right-radius: 10px;
+    max-height: 10rem;
+ 
+    .left {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+ 
+        .logo {
+        max-width: 6rem;
+        }
+ 
+        .company-name {
+            font-size: 2rem;
+            color: rgb(10, 13, 14);
+        }
+    }
+ 
+    .right {
+        display: flex;
+        gap: .5rem;
+ 
+        .btn {
+            background: rgb(204, 126, 10);
+            background: linear-gradient(
+                90deg,
+                rgb(4, 5, 5) 0%,
+                rgb(74, 145, 148) 35%,
+                rgb(19, 156, 197) 100%
+            );
+            font-size: 1.2rem;
+            padding: .5rem 1rem;
+            border-radius: 5px;
+            box-shadow: 2.6px 5.1px 5.1px hsl(0deg 0% 0% / 0.42);
+            transition-duration: 300ms;
+ 
+            &:hover {
+                transform: translateX(2.6px) translateY(5.1px);
+                box-shadow: 0 0 0 hsl(0deg 0% 0% / 0.42);
+            }
+ 
+            &:not(:hover) {
+                transform: scale(.9);
+            }
+ 
+            &:active {
+                box-shadow: inset 2.6px 5.1px 5.1px hsl(0deg 0% 0% / 0.42);
+            }
+        }
+    }
 }
-
-.header-left {
-    display: flex;
-    align-items: center;
-    gap: 10px; /* Space between icon and text */
-}
-
-.snorlax-icon {
-    width: 50px; /* Adjust size as needed */
-    height: 50px;
-    border-radius: 50%; /* Make it round */
-    background-color: white; /* Background for the placeholder image */
-    padding: 5px;
-}
-
-.header-left h1 {
-    margin: 0;
-    font-size: 1.8em;
-    font-weight: bold;
-}
-
-.header-nav {
-    display: flex;
-    gap: 10px; /* Space between buttons */
-    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
-    justify-content: center; /* Center buttons when wrapped */
-    margin-top: 5px; /* Add a little space if wrapped */
-}
-
-.nav-button {
-    background-color: #4682B4; /* Steel Blue for buttons, similar to image */
-    color: white;
-    border: none;
-    padding: 10px 18px;
-    border-radius: 8px; /* Rounded corners for buttons */
-    cursor: pointer;
-    font-size: 0.95em;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
-
-.nav-button:hover {
-    background-color: #5A9BD6; /* Lighter blue on hover */
-    transform: translateY(-2px); /* Slight lift effect */
-}
-
-.nav-button:active {
-    background-color: #3A7AA0; /* Darker blue on click */
-    transform: translateY(0);
-}
-
-/* Main Content Styling */
-.main-content {
-    max-width: 900px;
-    margin: 20px auto; /* Center the content with auto margins */
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.intro-section, .info-section, .gallery-placeholder {
-    margin-bottom: 30px;
-    padding: 15px;
-    border: 1px solid #eee;
-    border-radius: 8px;
-    background-color: #fdfdfd;
-}
-
-.intro-section h2, .info-section h3, .gallery-placeholder h3 {
-    color: #20B2AA; /* Teal color for headings */
-    margin-top: 0;
-    margin-bottom: 15px;
-    text-align: center;
-}
-
-.intro-section p {
-    text-align: justify;
-    margin-bottom: 10px;
-}
-
-.info-section ul {
-    list-style-type: disc;
-    padding-left: 25px;
-}
-
-.info-section li {
-    margin-bottom: 8px;
-}
-
-.image-grid {
+ 
+.footer {
     display: flex;
     justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap; /* Allow images to wrap on smaller screens */
+    align-items: center;
+    background-color: rgb(28, 112, 168);
+    font-size: .8rem;
+    padding: .5rem 1rem;
+    justify-self: end;
 }
-
-.image-grid img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover; /* Ensure images cover the area without distortion */
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease;
-}
-
-.image-grid img:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
-}
-
-
-/* Footer Styling */
-.footer {
-    background-color: #4682B4; /* Blue color for footer, similar to image */
-    color: white;
-    text-align: center;
-    padding: 15px 20px;
-    margin-top: 30px;
-    border-top-left-radius: 10px; /* Rounded corners for the top of the footer */
-    border-top-right-radius: 10px;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .header {
+ 
+.contents {
+    height: 100%;
+    /* border: 1px dotted black; */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex: 1;
+ 
+    .hero {
+        width: 100%;
+        display: flex;
         flex-direction: column;
-        text-align: center;
-    }
-
-    .header-left {
-        margin-bottom: 10px;
-    }
-
-    .header-nav {
-        flex-direction: column; /* Stack buttons vertically on small screens */
-        width: 100%; /* Make buttons take full width */
-        gap: 8px;
-    }
-
-    .nav-button {
-        width: 80%; /* Adjust button width for smaller screens */
-        margin: 0 auto; /* Center buttons */
-    }
-
-    .main-content {
-        margin: 15px;
-        padding: 15px;
-    }
-
-    .image-grid img {
-        width: 120px;
-        height: 120px;
-    }
-}
-
-@media (max-width: 480px) {
-    .header-left h1 {
-        font-size: 1.5em;
-    }
-
-    .snorlax-icon {
-        width: 40px;
-        height: 40px;
-    }
-
-    .nav-button {
-        font-size: 0.9em;
-        padding: 8px 15px;
-    }
-
-    .image-grid img {
-        width: 100px;
-        height: 100px;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: center;
     }
 }
