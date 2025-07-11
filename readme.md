@@ -3,7 +3,7 @@
 <br/>
 
 <br />
-< align="center">
+
   <a href="https://github.com/elijahdelmundo">
   <!-- TODO: If you want to add logo or banner you can add it here -->
     <img src="./assets/img/edm.png" alt="Boxing Logo" width="130" height="100">
