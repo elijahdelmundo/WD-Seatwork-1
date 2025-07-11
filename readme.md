@@ -14,7 +14,7 @@
 </div>
 <This project showcases proficiency in HTML and CSS through various page layouts, each featuring different header and footer designs inspired by popular websites.
 <div align="center">
-  Short Description. (Optional)
+ 
 </div>
 
 <br />
@@ -111,9 +111,9 @@ WD-ProjectName
 
 ## Resources
 
-<!-- TODO: Add References -->
-| Title | Purpose | Link |
-|-|-|-|
+
+References
+|-|
 Head 1 https://www.ufc.com/athletes
 Head 2 https://www.mcdonalds.com.ph/
 Head 3 https://www.starbucks.com/
