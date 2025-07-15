@@ -107,7 +107,6 @@ WD-ProjectName
 └─ index.html
 └─ readme.md
 └─ style.css
-```
 
 ## Resources
 
