@@ -92,21 +92,39 @@ Guiding Question:
 7. File Structure to follow below.
 
 ```
-WD-ProjectName
-└─ assets
-|   |
-|   └─ IMG
-|   |   └─ fp/kawa/mcdo/sb/ufc.png/WP.jpg
-|   └─ js
-|       └─ script.js
-└─ pages
-|  └─ head1 -> head5
-|     | └─index.html 
-|     | └─style.css
-|
-└─ index.html
-└─ readme.md
-└─ style.css
+WD-Seatwork-1
+├─ assets
+│   ├─ img
+│   │   ├─ edm.png
+│   │   └─ (other images)
+│   └─ style.css
+├─ IMG
+│   ├─ fp.png
+│   ├─ kawa.png
+│   ├─ mcdo.png
+│   ├─ sb.png
+│   ├─ ufc.png
+│   └─ WP.jpg
+├─ pages
+│   ├─ head1
+│   │   ├─ index.html
+│   │   └─ style.css
+│   ├─ head2
+│   │   ├─ index.html
+│   │   └─ style.css
+│   ├─ head3
+│   │   ├─ index.html
+│   │   └─ style.css
+│   ├─ head4
+│   │   ├─ index.html
+│   │   └─ style.css
+│   └─ head5
+│       ├─ index.html
+│       └─ style.css
+├─ index.html
+├─ readme.md
+└─ LICENSE
+```
 
 ## Resources
 
