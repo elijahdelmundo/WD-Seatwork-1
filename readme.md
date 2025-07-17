@@ -95,30 +95,29 @@ Guiding Question:
 WD-Seatwork-1
 ├─ assets
 │   ├─ img
-│   │   ├─ edm.png
-│   │   └─ (other images)
-│   └─ style.css
-├─ IMG
+│   │─ edm.png
 │   ├─ fp.png
-│   ├─ kawa.png
+│   │─ kawa.png
 │   ├─ mcdo.png
 │   ├─ sb.png
 │   ├─ ufc.png
 │   └─ WP.jpg
+│   └─ style.css
+│
 ├─ pages
-│   ├─ head1
+│   ├─ ultimate
 │   │   ├─ index.html
 │   │   └─ style.css
-│   ├─ head2
+│   ├─ mcdonalds
 │   │   ├─ index.html
 │   │   └─ style.css
-│   ├─ head3
+│   ├─ starbucks
 │   │   ├─ index.html
 │   │   └─ style.css
-│   ├─ head4
+│   ├─ foodpanda
 │   │   ├─ index.html
 │   │   └─ style.css
-│   └─ head5
+│   └─ kawasaki
 │       ├─ index.html
 │       └─ style.css
 ├─ index.html
